@@ -1,0 +1,59 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
+<div class="login_page">
+  <div class="login_header">
+    <h1 class="login_logo">CBT</h1>
+  </div>
+  <div class="login_container_root">
+    <div class="login_container">
+      <form
+        method="post"
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        {% csrf_token %}
+        <input
+          type="text"
+          class="login_username"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          type="password"
+          class="login_password"
+          name="password"
+          placeholder="Password"
+        />
+        <!-- <p class="login_password_forget">Forget password</p> -->
+        <a href="{% url 'forgetpassword' %}" class="login_password_forget"
+          >Forget password</a
+        >
+
+        <button class="login_btn">Login</button>
+      </form>
+      <!-- <p class="singup_btn">SingUp</p> -->
+      <!-- template.html -->
+
+      <a href="{% url 'singup' %}" class="singup_btn">Signup</a>
+
+      <div class="login_rights">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+        >
+          <path
+            d="M10 1.875C5.52 1.875 1.875 5.52 1.875 10C1.875 14.48 5.52 18.125 10 18.125C14.48 18.125 18.125 14.48 18.125 10C18.125 5.52 14.48 1.875 10 1.875ZM10 3.125C13.8037 3.125 16.875 6.19625 16.875 10C16.875 13.8037 13.8037 16.875 10 16.875C6.19625 16.875 3.125 13.8037 3.125 10C3.125 6.19625 6.19625 3.125 10 3.125ZM9.94125 6.25C7.86375 6.25 6.19125 7.9225 6.19125 10C6.19125 12.0775 7.86375 13.75 9.94125 13.75C11.4406 13.75 12.7225 12.8513 13.32 11.5819L12.1875 11.055C11.7844 11.9112 10.9425 12.5 9.94125 12.5C8.51813 12.5 7.44125 11.4231 7.44125 10C7.44125 8.57688 8.51813 7.5 9.94125 7.5C10.9425 7.5 11.785 8.08812 12.1875 8.94562L13.3206 8.41812C12.7219 7.14875 11.4406 6.25 9.94062 6.25H9.94125Z"
+            fill="white"
+          />
+        </svg>
+        <p>
+          Perform login securely <br />
+          All Copyrights Reserve to CBT.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
