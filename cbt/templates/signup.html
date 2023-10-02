@@ -1,0 +1,135 @@
+{% load static %}
+
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" /> -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/static/signup.css' %}"
+/>
+
+<div class="signup_page">
+  <div class="sgnup_header">
+    <h1 class="signup_logo">CBT</h1>
+  </div>
+
+  <div class="signup_container_root">
+    <form class="signup_container">
+      <table>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">First Name :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <input type="text" class="signup_tr_td_input" />
+          </td>
+        </tr>
+
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Last Name :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <input type="text" class="signup_tr_td_input" />
+          </td>
+        </tr>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Organization :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <input type="text" class="signup_tr_td_input" />
+          </td>
+        </tr>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Phone no :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <div class="signup_phone">
+              <input type="text" class="signup_tr_td_phone_input" />
+              <button class="signup_phone_button">verify</button>
+            </div>
+          </td>
+        </tr>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">OTP :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <input type="number" class="signup_tr_td_input" />
+          </td>
+        </tr>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Email :</label>
+          </td>
+          <td class="signup_tr_td_2">
+            <input type="text" class="signup_tr_td_input" />
+          </td>
+        </tr>
+        <tr class="signup_password">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Password :</label>
+          </td>
+          <td class="signup_tr_td_password">
+            <input type="password" class="signup_tr_td_input" />
+            <div class="password_required">
+              <div>Must Contains equal or above 8 char</div>
+              <ul style="margin: 0px; padding-left: 20px">
+                <li>Uppercase</li>
+                <li>Lower Case</li>
+                <li>Special Character</li>
+                <li>Numeric Value</li>
+                <li>Latter</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr class="signup_tr">
+          <td class="signup_tr_td_1">
+            <label class="signup_tr_td_label">Confirm Password :</label>
+          </td>
+          <td
+            class="signup_tr_td_2"
+            style="display: flex; flex-direction: column"
+          >
+            <input type="text" class="signup_tr_td_input" />
+            <div
+              style="
+                text-align: left;
+                color: #f00;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.48px;
+                display: none;
+              "
+            >
+              Matched
+            </div>
+            <div
+              style="
+                text-align: left;
+                color: #f00;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.48px;
+              "
+            >
+              Not Matched to the password
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div style="margin-top: 30px">
+        <button class="signup_btn">Signup</button>
+        <a href="{% url 'login' %}" class="signup_login_btn">Login </a>
+      </div>
+    </form>
+  </div>
+</div>

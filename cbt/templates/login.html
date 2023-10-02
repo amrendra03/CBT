@@ -1,6 +1,6 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}" />
 <div class="login_page">
   <div class="login_header">
     <h1 class="login_logo">CBT</h1>
@@ -26,15 +26,15 @@
         />
         <!-- <p class="login_password_forget">Forget password</p> -->
         <a href="{% url 'forgetpassword' %}" class="login_password_forget"
-          >Forget password</a
-        >
+          >Forget password
+        </a>
 
         <button class="login_btn">Login</button>
       </form>
       <!-- <p class="singup_btn">SingUp</p> -->
       <!-- template.html -->
 
-      <a href="{% url 'singup' %}" class="singup_btn">Signup</a>
+      <a href="{% url 'signup' %}" class="singup_btn">Signup</a>
 
       <div class="login_rights">
         <svg
