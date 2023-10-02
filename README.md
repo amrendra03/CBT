@@ -1,3 +1,3 @@
 # CBT
 # This is fully base on Django,MySql project
-# This Full Stack project
+# This is a Full Stack project
