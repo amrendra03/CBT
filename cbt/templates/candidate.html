@@ -1,23 +1,2016 @@
+{% load static %}
 <html>
   <head>
     <title>CBT</title>
+    <link rel="stylesheet" href="{% static  'candidate.css' %}" />
   </head>
   <body style="width: 100%; height: 720px; margin: 0; background: #000c2d">
     {% include "header.html" %}
-    <table
-      style="
-        /* background: #000c2d; */
-        width: 100%;
-        height: 100%;
-        border-collapse: collapse;
-        color: #fff;
-      "
-    >
+    <table style="width: 100%; height: 100%; border-collapse: collapse">
       <tr style="background: #bae2ff">
         <td style="width: 200px; vertical-align: baseline; padding: 0px">
           {% include "navbar.html" %}
         </td>
-        <td style="vertical-align: baseline"><h1>Candiadte</h1></td>
+        <td style="vertical-align: top">
+          <div class="candidate_root">
+            <div class="candidate_block_a">
+              <div class="candidate_exam_search">
+                <p
+                  style="
+                    width: 120px;
+                    height: 50px;
+                    margin: 0;
+                    margin-top: 16px;
+                    color: #2b2b2b;
+                    font-family: sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  Exam id:
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 330px;
+                    height: 50px;
+                    margin-top: 14px;
+                  "
+                >
+                  <input
+                    style="
+                      width: 297px;
+                      height: 35px;
+                      flex-shrink: 0;
+                      outline: none;
+                      font-size: 18px;
+                      border-radius: 4px;
+                      border: 0.5px solid #000;
+                      background: #f6f6f6;
+                    "
+                    type="text"
+                  />
+                  <p
+                    style="
+                      margin: 0;
+                      margin-top: 2px;
+                      color: #f00;
+
+                      font-family: sans-serif;
+                      font-size: 13px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                      letter-spacing: 0.39px;
+                    "
+                  >
+                    Please enter valid
+                  </p>
+                </div>
+                <button
+                  style="
+                    width: 100px;
+                    height: 45px;
+                    flex-shrink: 0;
+                    border-radius: 8px;
+                    border: 0.5px solid #000;
+                    background: #00b2ff;
+                    margin-top: 10px;
+
+                    color: #fff;
+                    text-align: center;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  Search
+                </button>
+              </div>
+              <div class="candidate_upload">
+                <div class="candidate_upload_input">
+                  <p
+                    style="
+                      margin: 0;
+                      color: #000;
+                      text-align: center;
+                      font-family: sans-serif;
+                      font-size: 12px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                      letter-spacing: 0.36px;
+                    "
+                  >
+                    Upload Candidate Detail :
+                  </p>
+
+                  <input
+                    type="file"
+                    style="
+                      margin-top: 5px;
+                      width: 250px;
+                      height: 22px;
+                      border-top-right-radius: 4px;
+                      border-bottom-right-radius: 4px;
+                      background-color: #fff;
+                    "
+                  />
+
+                  <p
+                    style="
+                      margin: 0;
+                      color: #f00;
+                      text-align: center;
+                      font-family: sans-serif;
+                      font-size: 12px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                      letter-spacing: 0.36px;
+                    "
+                  >
+                    * Please upload .csv, .xml file
+                  </p>
+                </div>
+                <button
+                  style="
+                    margin-right: 20px;
+                    margin-top: 14px;
+                    margin-left: 20px;
+                    width: 100px;
+                    height: 45px;
+                    flex-shrink: 0;
+                    border-radius: 8px;
+                    border: 0.5px solid #000;
+                    background: #0763d0;
+                    color: #fff;
+                    text-align: center;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  Upload
+                </button>
+              </div>
+            </div>
+            <div class="candidate_block_b">
+              <div class="flex">
+                <div
+                  style="
+                    width: 200px;
+                    height: 47px;
+                    color: #000;
+
+                    font-family: sans-serif;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #d0d0d0;
+                  "
+                >
+                  Mega Contest 2023 <br />
+                  id:788357684
+                </div>
+                <div
+                  style="
+                    width: 220px;
+                    height: 47px;
+                    color: #000;
+
+                    font-family: sans-serif;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #d0d0d0;
+                  "
+                >
+                  23 Oct 2023 / 23:00 / 1:45 Hour
+                </div>
+                <div
+                  style="
+                    width: 80px;
+                    height: 47px;
+                    color: #000;
+
+                    font-family: sans-serif;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #d0d0d0;
+                  "
+                >
+                  Live
+                </div>
+                <div
+                  style="
+                    width: 100px;
+                    height: 47px;
+                    color: #000;
+
+                    font-family: sans-serif;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #d0d0d0;
+                  "
+                >
+                  Total:<br />
+                  10,00,000
+                </div>
+              </div>
+            </div>
+            <div class="candidate_block_c">
+              <!------ candidate_table head ---------------->
+              <div class="flex_table">
+                <div class="candidate_table_head" style="width: 150px">
+                  ID/Password
+                </div>
+                <div class="candidate_table_head" style="width: 260px">
+                  Candidate detail
+                </div>
+                <div class="candidate_table_head" style="width: 80px">
+                  Status
+                </div>
+                <div class="candidate_table_head" style="width: 254px">
+                  Options
+                </div>
+              </div>
+              <div
+                class="candidate_row_scroll"
+                style="height: 570px; overflow: auto"
+              >
+                <!-- Candidate details -------------------------- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- DUmmy_data-- -->
+                <div class="flex_table_row">
+                  <div class="candidate_table_row" style="width: 150px">
+                    Candidate id: 23145<br />
+                    Password: 123245
+                  </div>
+                  <div class="candidate_table_row" style="width: 260px">
+                    <img
+                      style="width: 80px; height: 60px; background-color: #000"
+                      src=""
+                      alt=""
+                    />
+                    <div
+                      style="
+                        margin-left: 20px;
+                        text-align: start;
+                        overflow: hidden;
+                        max-width: 200px;
+                      "
+                    >
+                      <div>Amrendra yadav</div>
+                      <div>amrendra36912@gmail.com</div>
+                      <div>+91 933xxxx251</div>
+                    </div>
+                  </div>
+                  <div class="candidate_table_row" style="width: 80px">
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- option colum-------------- -->
+                  <div
+                    class="candidate_table_row"
+                    style="
+                      width: 250px;
+                      display: flex;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_44_1031)">
+                          <path
+                            d="M13.5 24.75C19.7132 24.75 24.75 19.7132 24.75 13.5C24.75 7.2868 19.7132 2.25 13.5 2.25C7.2868 2.25 2.25 7.2868 2.25 13.5C2.25 19.7132 7.2868 24.75 13.5 24.75Z"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M5.625 21.375L21.375 5.625"
+                            stroke="#FF0000"
+                            stroke-width="3"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_44_1031">
+                            <rect width="27" height="27" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Block
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6875 19.4375L20.75 12.375L18.9688 10.5938L13.6875 15.875L11.0625 13.25L9.28125 15.0312L13.6875 19.4375ZM15 27.5C12.1042 26.7708 9.71375 25.1092 7.82875 22.515C5.94375 19.9208 5.00083 17.0408 5 13.875V6.25L15 2.5L25 6.25V13.875C25 17.0417 24.0571 19.9221 22.1712 22.5162C20.2854 25.1104 17.895 26.7717 15 27.5ZM15 24.875C17.1667 24.1875 18.9583 22.8125 20.375 20.75C21.7917 18.6875 22.5 16.3958 22.5 13.875V7.96875L15 5.15625L7.5 7.96875V13.875C7.5 16.3958 8.20833 18.6875 9.625 20.75C11.0417 22.8125 12.8333 24.1875 15 24.875Z"
+                          fill="#00D215"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Verify
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29171 14.0624C7.72574 14.0624 8.09483 13.9103 8.399 13.6062C8.70317 13.302 8.8549 12.9333 8.85421 12.4999C8.85421 12.0659 8.70212 11.6968 8.39796 11.3926C8.09379 11.0885 7.72504 10.9367 7.29171 10.9374C6.85768 10.9374 6.48858 11.0895 6.18442 11.3937C5.88025 11.6978 5.72851 12.0666 5.72921 12.4999C5.72921 12.9339 5.88129 13.303 6.18546 13.6072C6.48962 13.9114 6.85837 14.0631 7.29171 14.0624ZM12.5 14.0624C12.9341 14.0624 13.3032 13.9103 13.6073 13.6062C13.9115 13.302 14.0632 12.9333 14.0625 12.4999C14.0625 12.0659 13.9105 11.6968 13.6063 11.3926C13.3021 11.0885 12.9334 10.9367 12.5 10.9374C12.066 10.9374 11.6969 11.0895 11.3927 11.3937C11.0886 11.6978 10.9368 12.0666 10.9375 12.4999C10.9375 12.9339 11.0896 13.303 11.3938 13.6072C11.698 13.9114 12.0667 14.0631 12.5 14.0624ZM17.7084 14.0624C18.1424 14.0624 18.5115 13.9103 18.8157 13.6062C19.1198 13.302 19.2716 12.9333 19.2709 12.4999C19.2709 12.0659 19.1188 11.6968 18.8146 11.3926C18.5105 11.0885 18.1417 10.9367 17.7084 10.9374C17.2743 10.9374 16.9053 11.0895 16.6011 11.3937C16.2969 11.6978 16.1452 12.0666 16.1459 12.4999C16.1459 12.9339 16.298 13.303 16.6021 13.6072C16.9063 13.9114 17.275 14.0631 17.7084 14.0624ZM12.5 22.9166C11.0591 22.9166 9.7049 22.643 8.43754 22.0958C7.17018 21.5485 6.06775 20.8065 5.13025 19.8697C4.19275 18.9322 3.45074 17.8298 2.90421 16.5624C2.35768 15.2951 2.08407 13.9409 2.08337 12.4999C2.08337 11.0589 2.35699 9.70478 2.90421 8.43742C3.45143 7.17006 4.19344 6.06763 5.13025 5.13013C6.06775 4.19263 7.17018 3.45061 8.43754 2.90409C9.7049 2.35756 11.0591 2.08395 12.5 2.08325C13.941 2.08325 15.2952 2.35686 16.5625 2.90409C17.8299 3.45131 18.9323 4.19332 19.8698 5.13013C20.8073 6.06763 21.5497 7.17006 22.0969 8.43742C22.6441 9.70478 22.9174 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0959 16.5624C21.5487 17.8298 20.8066 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5496 16.5625 22.0968C15.2952 22.644 13.941 22.9173 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.0261 16.7968 20.8334 14.8263 20.8334 12.4999C20.8334 10.1735 20.0261 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1737 4.16659 8.20317 4.97388 6.58858 6.58846C4.974 8.20304 4.16671 10.1735 4.16671 12.4999C4.16671 14.8263 4.974 16.7968 6.58858 18.4114C8.20317 20.026 10.1737 20.8333 12.5 20.8333Z"
+                          fill="#0085FF"
+                        />
+                      </svg>
+                      <p
+                        style="
+                          margin: 0;
+                          color: #000;
+                          font-family: sans-serif;
+                          font-size: 16px;
+                          font-style: normal;
+                          font-weight: 400;
+                          line-height: normal;
+                          letter-spacing: 0.48px;
+                        "
+                      >
+                        Pendding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of candidate table ------------->
+              </div>
+            </div>
+
+            <!-- footer candidate download candidate list in  csv formate  -->
+
+            <div class="candidate_block_d">
+              <p style="" class="candidate_download_info">
+                Download candidate detail in .csv file
+              </p>
+              <button class="candidate_download_btn">Download</button>
+            </div>
+          </div>
+        </td>
       </tr>
     </table>
   </body>
