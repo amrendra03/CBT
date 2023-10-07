@@ -1,0 +1,225 @@
+.candidate_root {
+    width: 100%;
+    height: 100%;
+    background-color: #BAE2FF;
+}
+
+.candidate_block_a {
+    width: 100%;
+    height: 80px;
+    background: #BAE2FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.candidate_block_b {
+    width: 100%;
+    height: 50px;
+    background: #BAE2FF;
+}
+
+.candidate_block_c {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid #000; */
+    background: #FEFEFE;
+
+}
+
+.candidate_row_scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.candidate_row_scroll::-webkit-scrollbar-thumb {
+    background-color: #939393;
+    border-radius: 2px;
+    border: none;
+}
+
+.candidate_block_d {
+    width: 100%;
+    height: 100px;
+    background: #BAE2FF;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.candidate_exam_search {
+    padding-left: 20px;
+
+    width: 550px;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate_upload {
+    padding-left: 30px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.candidate_upload_input {
+
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+
+}
+
+/* Style for the custom input container */
+.custom-input {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    /* Set the desired width */
+}
+
+
+.candidate_exam_detail {
+    width: 50%;
+    min-width: 500px;
+    height: 50px;
+    border: 1.5px solid #000;
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.candidate_exam {
+
+
+    color: #000;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.39px;
+
+
+}
+
+/* hhhhhhhhhhhhhhhh */
+.flex {
+
+    display: flex;
+    width: 600px;
+}
+
+.flex>div {
+
+
+    border: 1.5px solid black;
+    height: 25px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    flex: auto;
+}
+
+.flex_table {
+
+    display: flex;
+    width: 100%;
+}
+
+.flex_table>div {
+
+
+    border: 1.5px solid black;
+    height: 25px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    flex: auto;
+}
+
+.candidate_table_head {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+
+}
+
+/* candidate table row data------------------- */
+.flex_table_row {
+    display: flex;
+    width: 100%;
+}
+
+.flex_table_row>div {
+    border: 1.5px solid black;
+    border-top: 0px;
+    height: 80px;
+    line-height: 18px;
+
+    font-size: 14px;
+    flex: auto;
+}
+
+.candidate_table_row {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.candidate_download_info {
+    color: #039100;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.candidate_download_btn {
+
+    width: 113px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #003676;
+    background: #0763d0;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.54px;
+
+    margin-left: 10px;
+    margin-right: 20px;
+}
