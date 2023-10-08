@@ -10,14 +10,461 @@
         width: 100%;
         height: 100%;
         border-collapse: collapse;
-        color: #fff;
       "
     >
       <tr style="background: #bae2ff">
         <td style="width: 200px; vertical-align: baseline; padding: 0px">
           {% include "navbar.html" %}
         </td>
-        <td style="vertical-align: baseline"><h1>Setting</h1></td>
+        <td style="vertical-align: top">
+          <div
+            id="setting_root"
+            style="
+              width: 100%;
+              height: 780px;
+
+              background: #bae2ff;
+              display: flex;
+              flex-direction: column;
+
+              align-items: center;
+            "
+          >
+            <h1
+              style="
+                color: #404040;
+
+                font-family: sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 2px;
+              "
+            >
+              Setting
+            </h1>
+
+            <form
+              action="
+        "
+            >
+              <div
+                id="setting_container"
+                style="
+                  width: 624px;
+                  height: 305px;
+                  border-radius: 10px;
+                  background: #f1feff;
+                  display: flex;
+                  flex-direction: row;
+                  padding: 4px 0px 4px 5px;
+                "
+              >
+                <div style="width: 580px; height: 96%; padding-top: 12px">
+                  <!-- first name ---------- -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-right: 30px;
+                      "
+                      >First Name:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                  <!-- last name ------------ -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-right: 30px;
+                      "
+                      >Last Name:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                  <!-- Organization name---------- -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-right: 30px;
+                      "
+                      >Organization:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                  <!-- phone no----- -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-right: 30px;
+                      "
+                      >Phone no:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+
+                  <!-- email address------------ -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-right: 30px;
+                      "
+                      >Email:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                </div>
+                <!-- edit icon----------------- -->
+                <div style="width: 30px; height: 30px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M20.5925 6.76003L23.24 9.40628M22.295 4.42878L15.1363 11.5875C14.7664 11.9569 14.5141 12.4275 14.4113 12.94L13.75 16.25L17.06 15.5875C17.5725 15.485 18.0425 15.2338 18.4125 14.8638L25.5713 7.70503C25.7864 7.48991 25.957 7.23452 26.0734 6.95345C26.1899 6.67238 26.2498 6.37113 26.2498 6.0669C26.2498 5.76267 26.1899 5.46143 26.0734 5.18036C25.957 4.89929 25.7864 4.6439 25.5713 4.42878C25.3561 4.21366 25.1007 4.04301 24.8197 3.92659C24.5386 3.81017 24.2374 3.75024 23.9331 3.75024C23.6289 3.75024 23.3276 3.81017 23.0466 3.92659C22.7655 4.04301 22.5101 4.21366 22.295 4.42878Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M23.75 18.75V22.5C23.75 23.163 23.4866 23.7989 23.0178 24.2678C22.5489 24.7366 21.913 25 21.25 25H7.5C6.83696 25 6.20107 24.7366 5.73223 24.2678C5.26339 23.7989 5 23.163 5 22.5V8.75C5 8.08696 5.26339 7.45107 5.73223 6.98223C6.20107 6.51339 6.83696 6.25 7.5 6.25H11.25"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- passowrd -----------block------------ -->
+              <div
+                style="
+                  margin-top: 40px;
+                  width: 624px;
+                  height: 180px;
+                  border-radius: 10px;
+                  background: #f1feff;
+                  display: flex;
+                  flex-direction: row;
+                "
+              >
+                <div style="width: 580px; height: 96%; padding-top: 12px">
+                  <!-- Current password ---------- -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+
+                        margin-left: 10px;
+                        margin-right: 20px;
+                      "
+                      >Current password:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                  <!-- New password ------------ -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+                        margin-left: 10px;
+                        margin-right: 20px;
+                      "
+                      >New password:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                  <!-- Confirm password---------- -->
+                  <div style="display: flex; flex-direction: row">
+                    <label
+                      for=""
+                      style="
+                        display: flex;
+                        width: 170px;
+                        height: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #404040;
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+                        margin-left: 10px;
+                        margin-right: 20px;
+                      "
+                      >Confirm password:</label
+                    >
+                    <input
+                      type="text"
+                      style="
+                        width: 347px;
+                        height: 32px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #767676;
+                        background-color: #f1feff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-top: 5px;
+                        margin-top: 5px;
+                      "
+                    />
+                  </div>
+                </div>
+                <!-- edit icon----------------- -->
+                <div style="width: 30px; height: 30px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M20.5925 6.76003L23.24 9.40628M22.295 4.42878L15.1363 11.5875C14.7664 11.9569 14.5141 12.4275 14.4113 12.94L13.75 16.25L17.06 15.5875C17.5725 15.485 18.0425 15.2338 18.4125 14.8638L25.5713 7.70503C25.7864 7.48991 25.957 7.23452 26.0734 6.95345C26.1899 6.67238 26.2498 6.37113 26.2498 6.0669C26.2498 5.76267 26.1899 5.46143 26.0734 5.18036C25.957 4.89929 25.7864 4.6439 25.5713 4.42878C25.3561 4.21366 25.1007 4.04301 24.8197 3.92659C24.5386 3.81017 24.2374 3.75024 23.9331 3.75024C23.6289 3.75024 23.3276 3.81017 23.0466 3.92659C22.7655 4.04301 22.5101 4.21366 22.295 4.42878Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M23.75 18.75V22.5C23.75 23.163 23.4866 23.7989 23.0178 24.2678C22.5489 24.7366 21.913 25 21.25 25H7.5C6.83696 25 6.20107 24.7366 5.73223 24.2678C5.26339 23.7989 5 23.163 5 22.5V8.75C5 8.08696 5.26339 7.45107 5.73223 6.98223C6.20107 6.51339 6.83696 6.25 7.5 6.25H11.25"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- save button ----------------- -->
+              <div style="width: 100%; display: flex; justify-content: center">
+                <button
+                  style="
+                    margin-top: 40px;
+                    width: 147px;
+                    height: 52px;
+                    border-radius: 12px;
+                    background: #001e6f;
+                    color: #f9f9f9;
+                    text-align: center;
+                    font-family: sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                  "
+                >
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+        </td>
       </tr>
     </table>
   </body>
