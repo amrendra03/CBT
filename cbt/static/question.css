@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: row;
 
-
 }
 
 .question_block_c_a {
@@ -115,7 +114,7 @@
     margin-top: 10px;
     width: 229px;
     height: 148px;
-    flex-shrink: 0;
+
 
     border: 1px solid #000;
     background: #FFF;
@@ -134,7 +133,7 @@
     height: 30px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+
 
     color: #F00;
     text-align: center;
@@ -174,7 +173,7 @@
     margin-top: 10px;
     width: 720px;
     height: 160px;
-    flex-shrink: 0;
+
     border: 1px solid #000;
     background: #FFF;
 }
@@ -224,7 +223,7 @@
 
     width: 35px;
     height: 35px;
-    flex-shrink: 0;
+
     border-radius: 2px;
     border: 1px solid #000;
     background: #FFF;
@@ -233,7 +232,7 @@
 .q_o_b {
     width: 560px;
     height: 35px;
-    flex-shrink: 0;
+
     border-radius: 4px;
     border: 1px solid #000;
     background: #FFF;
@@ -242,7 +241,7 @@
 .q_o_c {
     width: 50px;
     height: 30px;
-    flex-shrink: 0;
+
     border-radius: 2px;
     border: 1px solid #000;
     background: #b5b5b5;
@@ -256,7 +255,7 @@
 
     width: 35px;
     height: 35px;
-    flex-shrink: 0;
+
 
     border-radius: 2px;
     border: 1px solid #000;
@@ -266,7 +265,7 @@
 .q_o_detail {
     width: 573px;
     height: 35px;
-    flex-shrink: 0;
+
     border-radius: 4px;
     border: 1px solid #000;
     background: #FFF;
@@ -275,7 +274,7 @@
 .q_o_add {
     width: 50px;
     height: 30px;
-    flex-shrink: 0;
+
     border-radius: 2px;
     border: 1px solid #000;
     background: #B5B5B5;
@@ -305,7 +304,7 @@
     padding-top: 10px;
     width: 720px;
     height: 50px;
-    /* background-color: #404040; */
+
     display: flex;
     justify-content: end;
 
@@ -333,7 +332,7 @@
 .q_o_add_li_btn {
     width: 98px;
     height: 40px;
-    flex-shrink: 0;
+
     border-radius: 8px;
     border: 1px solid #003676;
     background: #0763D0;
