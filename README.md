@@ -1,3 +1,6 @@
 # CBT
-# This is fully base on Django,MySql project
-# This is a Full Stack project
+# This is a Forntend Project used
+- Django
+- HTML
+- CSS
+- Python
