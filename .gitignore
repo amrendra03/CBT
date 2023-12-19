@@ -1,1 +1,3 @@
-/venv
+/cbt/app/__pycache__
+/cbt/app/migrations/__pycache__
+/cbt/cbt/__pycache__
